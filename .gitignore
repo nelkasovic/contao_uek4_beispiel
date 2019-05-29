@@ -1,0 +1,9 @@
+vendor/
+var/
+contao-manager/
+%SystemDrive%/
+logs/
+cache/
+tmp/
+assets/
+modules/

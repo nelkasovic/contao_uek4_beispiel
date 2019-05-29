@@ -1,9 +1,0 @@
-{
-    "server": "custom",
-    "php_cli": "C:\\\\Data\\\\Xampp7\\\\php\\\\php.exe",
-    "last_update": "2019-05-29T11:46:17+02:00",
-    "latest_version": "1.1.4",
-    "latest_requires": {
-        "php": "^5.5.9 || ^7"
-    }
-}

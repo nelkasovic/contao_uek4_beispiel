@@ -1,9 +1,0 @@
-# Composer
-/composer.lock
-/vendor/
-
-# Dotenv
-/.env
-
-# PhpUnit
-/phpunit.xml
