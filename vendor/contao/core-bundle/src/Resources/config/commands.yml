@@ -1,0 +1,43 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - ["setFramework", ["@contao.framework"]]
+
+    contao.command.automator:
+        class: Contao\CoreBundle\Command\AutomatorCommand
+        arguments:
+            - "@contao.framework"
+
+    contao.command.filesync:
+        class: Contao\CoreBundle\Command\FilesyncCommand
+
+    contao.command.install:
+        class: Contao\CoreBundle\Command\InstallCommand
+        arguments:
+            - '%kernel.project_dir%'
+            - '%contao.upload_path%'
+            - '%contao.image.target_dir%'
+        public: true
+
+    contao.command.symlinks:
+        class: Contao\CoreBundle\Command\SymlinksCommand
+        arguments:
+            - '%kernel.project_dir%'
+            - '%contao.upload_path%'
+            - '%kernel.logs_dir%'
+            - '@contao.resource_finder'
+            - '@event_dispatcher'
+        public: true
+
+    contao.command.user_password_command:
+        class: Contao\CoreBundle\Command\UserPasswordCommand
+        arguments:
+            - '@contao.framework'
+            - '@database_connection'
+
+    contao.command.version:
+        class: Contao\CoreBundle\Command\VersionCommand

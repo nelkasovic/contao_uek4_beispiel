@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+    font-size: 16px;
+    height: 100%;
+}
+body {
+    font-size: inherit;
+    height: 100%;
+    font-family: 'Droid Serif';
+    color: #323738;
+    background: #f2f1f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+aside#left-fixed {
+    background: #323738;
+    width: 8em;
+    height: 100vh;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+aside#left-fixed .menu-icons i {
+    font-size: 3em;
+    color: #eee;
+    display: block;
+    margin: 1em auto;
+}
+
+aside#left-fixed .menu-icons i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+        text-rendering: optimizeLegibility;
+        letter-spacing: -.01em;
+}
+h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
