@@ -7,3 +7,6 @@ cache/
 tmp/
 assets/
 modules/
+assets/
+bundles/
+share/
