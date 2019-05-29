@@ -10,3 +10,5 @@ contao-manager/
 **/bundles/
 **/share/
 **/web/
+**/app/
+**/system/

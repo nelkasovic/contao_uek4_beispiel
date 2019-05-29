@@ -1,8 +1,0 @@
-# This file has been auto-generated during installation
-parameters:
-    database_host: localhost
-    database_port: 3306
-    database_user: root
-    database_password: ''
-    database_name: uek4_beispiel
-    secret: 2c68ae793b72808e441efe92c1bf2d934981357c725c665bd1e94d2501b27a03
