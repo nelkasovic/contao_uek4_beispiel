@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f61fba574f529336ceb2ed1a6d53488a",
+    "content-hash": "4be814790995363de0e5a875e37026e3",
     "packages": [
         {
             "name": "ausi/slug-generator",
@@ -4076,6 +4076,64 @@
                 "maintenance"
             ],
             "time": "2018-02-14T10:18:33+00:00"
+        },
+        {
+            "name": "madeyourday/contao-rocksolid-slider",
+            "version": "v2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madeyourday/contao-rocksolid-slider.git",
+                "reference": "fa9058c3d6af4eecef451c59c648c12780a52ddc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madeyourday/contao-rocksolid-slider/zipball/fa9058c3d6af4eecef451c59c648c12780a52ddc",
+                "reference": "fa9058c3d6af4eecef451c59c648c12780a52ddc",
+                "shasum": ""
+            },
+            "require": {
+                "contao/core-bundle": "^4.4",
+                "php": ">=5.5"
+            },
+            "conflict": {
+                "contao/core": "*",
+                "contao/manager-plugin": "<2.0 || >=3.0"
+            },
+            "replace": {
+                "contao-legacy/rocksolid-slider": "self.version",
+                "contao-legacy/rocksolid-slider-pro": "self.version"
+            },
+            "require-dev": {
+                "contao/manager-plugin": "^2.0"
+            },
+            "type": "contao-bundle",
+            "extra": {
+                "contao-manager-plugin": "MadeYourDay\\RockSolidSlider\\ContaoManagerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "MadeYourDay\\RockSolidSlider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "RockSolid Themes",
+                    "homepage": "https://rocksolidthemes.com/de/contao-themes",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Responsive Slider. Full Contao integration, latest touch technology and hardware acceleration.",
+            "homepage": "https://rocksolidthemes.com/de/contao/plugins/responsive-slider",
+            "keywords": [
+                "contao",
+                "jquery",
+                "slider"
+            ],
+            "time": "2019-04-05T14:43:11+00:00"
         },
         {
             "name": "matthiasmullie/minify",

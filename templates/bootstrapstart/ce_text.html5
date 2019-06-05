@@ -1,0 +1,37 @@
+<?php /* $this->extend('block_searchable_inline'); */ ?>
+
+<div class="<?= $this->class ?> block my-5"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+	<?php $this->block('content'); ?>
+	
+		<?php if (!$this->addBefore): ?>
+			<?= $this->text ?>
+		<?php endif; ?>
+		
+		<?php if ($this->addBefore): ?>
+			<a class="img-preview d-block shadow-lg rounded mb-4 relative" href="#" target="_blank"><img alt="<?= $this->headline ?>" class="img-fluid rounded" src="<?= $this->singleSRC; ?>">
+				<div class="overlay d-flex align-items-center justify-content-center rounded">
+					<div class="btn btn-light btn-lg">
+						<?= $this->headline ?>
+					</div>
+				</div>
+			</a>
+			
+			<div class="card border-0 shadow mb-4">
+				<div class="card-body">
+						<?php $this->block('headline'); ?>
+							<?php if ($this->headline): ?>
+								<<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+							<?php endif; ?>
+						<?php $this->endblock(); ?>
+					<hr>
+				    <?= $this->text ?>
+				</div>
+			</div>
+	
+		<?php endif; ?>
+		
+		<pre class="hidden">
+		<?php print_r($this); ?>
+		</pre>
+	<?php $this->endblock(); ?>
+</div>

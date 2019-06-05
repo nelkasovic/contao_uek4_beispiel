@@ -1,0 +1,26 @@
+<a class="navbar-brand" href="/">
+    <img src="files/themes/bootstrapstart/img/sb-logo.svg" class="logo" />
+</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+	<ul class="<?= $this->level ?> navbar-nav ml-auto my-2 my-lg-0">
+	  <?php foreach ($this->items as $item): ?>
+		  <pre class="hidden">
+			<?php print_r($item); ?>
+		</pre>
+
+	      <li data-active="<?=$item['isActive']?>" <?php if ($item['class']) echo ' class="nav-item ' . $item['class'] . '"'; ?>><a href="#<?= $item['pageTitle'] ?: '#' ?>" title="<?= $item['pageTitle'] ?: $item['title'] ?>"<?php if ($item['class']) echo ' class="nav-link js-scroll-trigger ' . $item['class'] . '"'; ?><?php if ($item['accesskey'] !== '') echo ' accesskey="' . $item['accesskey'] . '"'; ?><?php if ($item['tabindex']) echo ' tabindex="' . $item['tabindex'] . '"'; ?><?= $item['target'] ?><?= $item['rel'] ?><?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?> itemprop="url">
+	      	<i class="far fa-file-alt mr-1 hidden invisible"></i>
+	      	<span itemprop="name"><?= $item['link'] ?></span></a><?= $item['subitems'] ?></li>
+
+	  <?php endforeach; ?>
+		<li>
+        	{{insert_module::43}}
+    	</li>
+	</ul>
+</div>
+
